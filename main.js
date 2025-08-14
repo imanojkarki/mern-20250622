@@ -14,9 +14,17 @@
 const title = document.getElementById("title");
 
 title.innerText = "Hello sita";
+/*
 title.style.color = "red";
 title.style.backgroundColor = "#dddddd";
 title.style.border = "1px solid black";
+*/
+
+Object.assign(title.style, {
+  color: "red",
+  backgroundColor: "#dddddd",
+  border: "1px solid black"
+});
 
 const paragraph = document.querySelector("p");
 
